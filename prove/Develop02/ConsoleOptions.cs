@@ -98,7 +98,7 @@ public class ConsoleOptions
         switch (_key)
         {
             case ConsoleKey.DownArrow:
-                if (_selection < listLength-1)
+                if (_selection < listLength - 1)
                 {
                     _selection += 1;
                 }

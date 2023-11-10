@@ -80,7 +80,8 @@ class Entries
 
             _consoleOptions.DisplayOptions(stringEntries, "Choose an entry to delete");
             int optionIndex = _consoleOptions.GetOptionIndex();
-            if(optionIndex == -1){
+            if (optionIndex == -1)
+            {
                 return;
             }
             _entries.RemoveAt(optionIndex);

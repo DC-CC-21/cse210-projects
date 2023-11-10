@@ -14,9 +14,5 @@ class Program
 
         Journal journal = new();
         journal.Run();
-        // string a = "ducks rule";
-        // Console.WriteLine(a);
-        // a = a.TrimEnd(a[a.Length-1]);
-        // Console.WriteLine(a);
     }
 }
