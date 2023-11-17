@@ -1,0 +1,9 @@
+Book	Chapter	start verse	end verse	scripture	type
+Matt	5	14	16	Let your light so shine before men	New Testament
+Matt	11	28	30	Come unto me, all ye that are heavy laden and I will give you rest"	New Testament
+Matt	16	15	19	Jesus said, "I will give unto thee the keys of the kingdom."	New Testament
+Matt	22	36	39	Love the Lord thy God and love thy neighbor	New Testament
+Moses	1	39	-1	This is my work and glory - to bring to pass the immortality and eternal life of man.	Old Testament
+Moses	7	18	-1	The Lord called his people Zion because they were of one heart and one mind.	Old Testament
+1 Nephi	3	7	-1	I will go and do the things which the Lord hath commanded.	Book of Mormon
+2 Nephi	2	25	-1	Adam fell that men might be; and men are, that they might have joy.	Book of Mormon
