@@ -6,7 +6,6 @@ class Program
     {
         /*
             Exceeding Requirements:
-                Added the ability for the user to choose if they would like to play again if they didn't type quit
                 Added the ability for the program to randomly choose a scripture
                 Added functionality to hide only words that have not already been hidden
                 Program loads scriptures from a .txt file
