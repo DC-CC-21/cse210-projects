@@ -35,6 +35,8 @@ bld/
 # my test files
 [Tt]est[Ff]iles/
 myfile.csv
+*.css
+gameData.txt
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
