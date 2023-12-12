@@ -1,7 +1,6 @@
 class WordTwister : Game
 {
     private string _currentWord;
-    private string _hiddenWord;
     private string _scrambledWord;
 
     public WordTwister()
@@ -32,6 +31,10 @@ class WordTwister : Game
             if (_currentWord != _hiddenWord)
             {
                 Console.Write("Incorrect");
+                if (_attempts >= _hiddenWord.Length)
+                {
+                    break;
+                }
                 _attempts += 1;
                 hint.ShowRandomLetter();
             }
@@ -42,6 +45,12 @@ class WordTwister : Game
             Console.CursorVisible = false;
             Thread.Sleep(1000);
             Console.CursorVisible = true;
+        }
+        if (_attempts >= _hiddenWord.Length)
+        {
+            Thread.Sleep(500);
+            Console.WriteLine("\nYou lose");
+            Thread.Sleep(800);
         }
     }
     private string Scramble()
@@ -67,7 +76,7 @@ class WordTwister : Game
         string definition = _wordDictionary.GetDefinition(_hiddenWord);
         Console.WriteLine($"{_hiddenWord} - {definition}");
 
-        Thread.Sleep(1000);
+        Thread.Sleep(1200);
     }
     public override string GetStringRepresentation()
     {

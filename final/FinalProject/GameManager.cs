@@ -9,7 +9,7 @@ class GameManager : References
         _consoleOptions = new();
 
         _options = new(){
-            {"Hangman", null},
+            {"Hangman", new Hangman()},
             {"WordTwister", new WordTwister()},
             {"View Previous Scores", null},
             {"Quit Program", null}
@@ -35,10 +35,7 @@ class GameManager : References
             {
                 _options[chosenOption].Start();
                 string representation = _options[chosenOption].GetStringRepresentation();
-                if (representation != "")
-                {
-                    DataManager.SaveData(representation);
-                }
+                DataManager.SaveData(representation);
             }
         }
         while (_playing);

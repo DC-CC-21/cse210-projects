@@ -3,11 +3,11 @@ class Word
 {
     private string _word;
     private string _hiddenWord;
-    
+
     public Word(string word)
     {
         _word = word;
-        _hiddenWord = Regex.Replace(word, @"\w","-"); //new('-', _word.Length);
+        _hiddenWord = Regex.Replace(word, @"\w", "-"); //new('-', _word.Length);
     }
     public string GetHiddenWord()
     {
@@ -32,9 +32,12 @@ class Word
             _hiddenWord = _hiddenWord.Insert(randomIndex, _word[randomIndex].ToString());
         }
     }
-    public void ShowAllOfType(char letter){
-        for(int i = 0; i < _word.Length; i ++){
-            if(_word[i] == letter){
+    public void ShowAllOfType(char letter)
+    {
+        for (int i = 0; i < _word.Length; i++)
+        {
+            if (_word[i] == letter)
+            {
                 _hiddenWord = _hiddenWord.Remove(i, 1);
                 _hiddenWord = _hiddenWord.Insert(i, letter.ToString());
             }

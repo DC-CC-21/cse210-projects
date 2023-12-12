@@ -3,7 +3,7 @@ public class ConsoleOptions
     private int _selection = 0;
     private ConsoleKey _key;
     private string _selectedOption;
-    
+
     public void DisplayOptions(List<string> options, string message)
     {
         Console.CursorVisible = false;

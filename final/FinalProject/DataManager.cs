@@ -1,15 +1,22 @@
 class DataManager
 {
-    List<string> _scores = new();
+    private List<string> _scores = new();
 
     public void LoadData()
     {
-        using (StreamReader streamReader = new("gameData.txt", true))
+        try
         {
-            while (!streamReader.EndOfStream)
+            using (StreamReader streamReader = new("gameData.txt", true))
             {
-                _scores.Add(streamReader.ReadLine());
+                while (!streamReader.EndOfStream)
+                {
+                    _scores.Add(streamReader.ReadLine());
+                }
             }
+        }
+        catch
+        {
+            // do nothing
         }
     }
     public static void SaveData(string stringRepresentation)
